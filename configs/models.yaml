@@ -1,0 +1,41 @@
+active: openrouter-gemma
+active_embedding: local
+
+models:
+  claude:
+    provider: claude
+    model: claude-sonnet-5-5
+  claude-fast:
+    provider: claude
+    model: claude-haiku-5-5
+  claude-best:
+    provider: claude
+    model: claude-opus-5-5
+
+  gpt:
+    provider: gpt
+    model: gpt-5.6-terra
+  gpt-fast:
+    provider: gpt
+    model: gpt-5.6-luna
+  gpt-best:
+    provider: gpt
+    model: gpt-5.6-sol
+
+  openrouter:
+    provider: openrouter
+    model: openrouter/auto
+  openrouter-gemma:
+    provider: openrouter
+    model: google/gemma-4-31b-it
+
+embeddings:
+  local:
+    provider: fastembed
+    model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  openrouter:
+    provider: openrouter
+    model: baai/bge-m3
+  openai:
+    provider: openai
+    model: text-embedding-3-small
